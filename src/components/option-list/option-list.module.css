@@ -1,0 +1,20 @@
+.fourOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 15px;
+}
+
+.option {
+  padding: 10px 10px 10px 15px;
+  font-weight: bold;
+  font-size: 16px;  
+  border: 1px solid white;
+  border-radius: 15px;  
+  cursor: pointer;
+}
+
+.option:active {
+  color: rgb(71 70 70);    
+  border: 1px solid rgb(71 70 70);
+}

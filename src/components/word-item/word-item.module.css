@@ -1,0 +1,39 @@
+@keyframes slide {
+  from {
+    transform: translateX(15%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10vh;
+  min-height: 330px;  
+  padding: 15px;
+  border: 1px solid rgb(236 232 232);
+  border-radius: 15px; 
+  animation-name: slide;
+  animation-duration: 200ms;
+}
+
+.cardWordArea {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Suisse', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (height <= 620px) {
+  .cardContainer { 
+    min-height: 26px; 
+  }
+}

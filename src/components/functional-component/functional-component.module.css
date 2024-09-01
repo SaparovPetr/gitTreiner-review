@@ -1,0 +1,106 @@
+.functionalArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.headerArea {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+  min-width: 300px;
+  cursor: pointer;
+}
+
+.logoArea {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.lable {
+  position: absolute;
+  top: 45px;
+  left: 123px;  
+  color: white;
+  font-size: 18px;
+}
+
+.buttonsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vh;
+}
+
+.topButtons {
+  display: flex;
+  gap: 2vh;
+}
+
+.bottomButtons {
+  display: flex;
+  gap: 2vh;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 114px;
+  height: 30px;
+  padding: 3px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'Suisse' , sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #323131;
+  border: 1px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.button:active {
+  color: grey;
+  border: 1px solid grey;
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width:  500px;
+  padding-top: 150px;
+  font-weight: bold;
+  font-size: 34px;
+  font-family: 'Suisse', sans-serif;
+  text-align: center;
+}
+
+@media (height <= 620px) {
+  .functionalArea {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headerArea {
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: start;
+    min-width: 226px;
+    height: 100%;
+  }
+
+  .success{ 
+    max-width: 534px;
+    padding: 0 15%;
+    font-size: 28px;
+  }
+}

@@ -2,7 +2,7 @@
   "name": "GitTreiner",
   "short_name": "GitTreiner",
   "start_url": "https://saparovpetr.github.io/gitTreiner/",
-  "display": "fullscreen",
+  "display": "standalone",
   "description": "A description for your application",
   "lang": " The default language of your application",
   "dir": "auto",

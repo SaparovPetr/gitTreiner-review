@@ -56,7 +56,7 @@ const FunctionalComponent = memo(() => {
     }
   };
 
-  if (collection.length > 0) {
+  if (collection.length > 0 && isFirstStart) {
     return (
       <div className={styles.functionalArea}>
         <div className={styles.headerArea}>
@@ -102,7 +102,7 @@ const FunctionalComponent = memo(() => {
   }
 
   // (заметка № 13)
-  if (collection.length === 0) {
+  if (collection.length === 0 && isFirstStart) {
     return (
       <div className={styles.functionalArea}>
         <div className={styles.success}>

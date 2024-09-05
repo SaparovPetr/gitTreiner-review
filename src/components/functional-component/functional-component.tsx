@@ -18,6 +18,7 @@ import { aWordBase } from '../../word-bases/a';
 import { bOneWordBase } from '../../word-bases/b-one';
 import { bTwoWordBase } from '../../word-bases/b-two';
 import { difWordBase } from '../../word-bases/dif';
+import ToolTip from '../tooltip/tooltip';
 import WordItem from '../word-item/word-item';
 
 const FunctionalComponent = memo(() => {
@@ -79,10 +80,7 @@ const FunctionalComponent = memo(() => {
           </div>
 
           <div className={styles.buttonsWrapper}>
-            <div className={styles.button}> remain: {collection.length}</div>
-            <div className={styles.button}>
-              today: {counterFromLocalStorage ? counterFromLocalStorage : 0}
-            </div>
+            <ToolTip />
           </div>
         </div>
 

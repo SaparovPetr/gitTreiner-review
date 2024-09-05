@@ -67,3 +67,14 @@
   text-transform: uppercase;
 }
 
+@media (height <= 620px) {  
+  .tooltip1 {
+    top: -250%;
+    left: 200%;
+  }
+
+  .tooltip-container:hover .tooltip1 {
+    top: -250%;
+    left: 200%;      
+  }
+}

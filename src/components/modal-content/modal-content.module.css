@@ -1,0 +1,41 @@
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+}
+
+.phraseZone {
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  text-align: center;
+}
+
+.buttonsZone {
+  display: flex;
+  gap: 5px;
+}
+
+.button {
+  min-width:82px;
+  padding: 0 20px 3px;
+  color: white;
+  font-size: 21px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+iframe {
+  width: 257px;
+}
+
+@media (height <= 620px) {  
+  .modalContent {
+    gap: 19px;  
+  }
+}
